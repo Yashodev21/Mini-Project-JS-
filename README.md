@@ -1,2 +1,3 @@
 # Mini-Project-JS-
-It Conatins mini projects of JavaScript.
+It Contains some projects 
+of JavaScript.
