@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| Tabs |</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="title">
+        <h2>about</h2>
+        <p>
+          “A V12 supercar combining extreme performance, luxury, and iconic design.”
+        </p>
+      </div>
+
+      <div class="about-center section-center">
+        <article class="about-img">
+          <video class="video-container" controls muted autoplay loop>
+        <source src="./car.mp4" type="video/mp4">
+        </article>
+        <article class="about">
+          <!-- btn container -->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="history">🚗 Overview</button>
+            <button class="tab-btn" data-id="vision">⚙️ Performance</button>
+            <button class="tab-btn" data-id="goals">🎨 Design & Technology</button>
+          </div>
+          <div class="about-content">
+            <!-- single item -->
+            <div class="content active" id="history">
+              <h4>🚗 Overview</h4>
+              <p>
+               The Lamborghini Aventador stands as one of the most iconic supercars ever produced, representing the perfect fusion of raw power, advanced engineering, and bold Italian design. As Lamborghini’s flagship V12 model, the Aventador is built for enthusiasts who demand extreme performance and exclusivity. Every element of the car reflects precision craftsmanship, from its low-slung aggressive stance to its unmistakable engine roar. Designed not just as a vehicle but as an experience, the Aventador delivers adrenaline, luxury, and prestige in equal measure.
+              </p>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="vision">
+              <h4>⚙️ Performance</h4>
+              <p>
+                At the heart of the Lamborghini Aventador lies a naturally aspirated 6.5-liter V12 engine, producing over 700 horsepower and delivering breathtaking acceleration. The car can sprint from 0 to 100 km/h in under three seconds, placing it among the fastest road-legal supercars in the world. Paired with Lamborghini’s advanced all-wheel-drive system and a lightning-fast automated manual transmission, the Aventador offers exceptional grip, stability, and control even at extreme speeds. Multiple driving modes allow the driver to switch between comfort and track-focused aggression, making every drive thrilling yet precise.
+              </p>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="goals">
+              <h4>🎨 Design & Technology</h4>
+              <p>
+                The Aventador’s design is inspired by aerospace engineering, featuring sharp lines, angular surfaces, and aggressive aerodynamics that maximize performance and visual impact. Its lightweight carbon-fiber monocoque enhances rigidity while reducing overall weight, contributing to superior handling. Inside, the cabin blends luxury with racing DNA, offering premium materials, a fully digital instrument cluster, and advanced infotainment systems. Cutting-edge technologies such as adaptive suspension, dynamic steering, and advanced braking systems ensure the Aventador remains both powerful and intelligent on the road.
+              </p>
+            </div>
+            <!-- end of single item -->
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
