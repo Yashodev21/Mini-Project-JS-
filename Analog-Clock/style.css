@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Verdana;
+}
+
+:root{
+    --primary-color:#f6f7fb;
+    --white-color:#fff;
+    --black-color:#18191a;
+    --red-color:#e74c3c;
+}
+
+body{
+    display:flex;
+    min-height:100vh;
+    align-items:center;
+    justify-content:center;
+    background:var(--primary-color);
+}
+
+.clock{
+    height:400px;
+    width:400px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--white-color);
+    box-shadow:0 15px 25px rgba(0,0,0,0.1), 0 25px 25px rgba(0,0,0,0.1);
+    position:relative;
+}
+
+/* Numbers */
+.clock label{
+    position:absolute;
+    inset:20px;
+    text-align:center;
+    transform:rotate(calc(var(--i)*30deg));
+}
+
+.clock label span{
+    display:inline-block;
+    font-size:30px;
+    font-weight:600;
+    color:var(--black-color);
+    transform:rotate(calc(var(--i)*-30deg));
+}
+
+/* Hands common */
+.hand{
+    position:absolute;
+    bottom:50%;
+    left:50%;
+    transform-origin:bottom;
+    transform:translateX(-50%) rotate(0deg);
+    border-radius:5px;
+}
+
+/* Hour */
+.hour{
+    height:90px;
+    width:8px;
+    background:#000;
+}
+
+/* Minute */
+.minute{
+    height:120px;
+    width:6px;
+    background:#333;
+}
+
+/* Second */
+.second{
+    height:140px;
+    width:3px;
+    background:red;
+}
+
+/* Center Dot */
+.clock::before{
+    content:"";
+    position:absolute;
+    height:15px;
+    width:15px;
+    background:black;
+    border-radius:50%;
+    z-index:10;
+}
