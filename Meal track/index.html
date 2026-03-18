@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dinner Tracker 🍛</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dinner Tracker 🍛</h1>
+    <p>Track your dinners and meal billing smartly!</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Mark Today’s Dinner</h2>
+      <div class="btn-group">
+        <button id="doneBtn">✅ Dinner Done</button>
+        <button id="skippedBtn">❌ Skipped</button>
+      </div>
+    </div>
+
+    <div class="card stats">
+      <h2>Meal Summary</h2>
+      <p><strong>Total Meals:</strong> <span id="totalMeals">0</span> / 30</p>
+      <p><strong>Completed Meals:</strong> <span id="doneMeals">0</span></p>
+      <p><strong>Skipped Meals:</strong> <span id="skippedMeals">0</span></p>
+      <div class="progress-bar">
+        <div id="progress"></div>
+      </div>
+    </div>
+
+    <div class="card billing">
+      <h2>Billing Info</h2>
+      <p><strong>Meal Plan Cost:</strong> ₹1500 (30 meals)</p>
+      <p><strong>Cost per Meal:</strong> ₹50</p>
+      <p><strong>Total Bill:</strong> ₹<span id="billAmount">0.00</span></p>
+      <p><strong>Remaining Balance:</strong> ₹<span id="remaining">1500.00</span></p>
+    </div>
+
+    <div class="card history">
+      <h2>Dinner History</h2>
+      <ul id="historyList"></ul>
+    </div>
+
+    <div class="card actions">
+      <button id="resetBtn" class="reset">🔄 Reset Data</button>
+    </div>
+  </main>
+
+  <!-- Daily Reminder Modal -->
+  <div id="reminderModal" class="modal">
+    <div class="modal-content">
+      <h3>🍽️ Dinner Reminder</h3>
+      <p>Hey Yash! Don’t forget to mark your dinner for today 😋</p>
+      <button id="closeReminder">Got it!</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with 💖 by Yash</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
